@@ -1,9 +1,9 @@
 
 const express = require("express");
-const app = express();
-
-require('dotenv').config()
 import { subscribeMessage } from '../events/src/index'
+const app = express();
+require('dotenv').config()
+
 
 export const subscribeMessageService = () => {
     console.log('start subscribe message service')

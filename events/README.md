@@ -20,11 +20,11 @@ Variables del producer.
 
 ```
 #Producer
-EVENT_CONNECT_STRING=""
+EVENT_PUBLISH_CONNECT_STRING=""
 SOURCE_NAME=""
 ```
 
-En la variable de 'EVENT_CONNECT_STRING' se asigna el valor de arn del SNS. <br>
+En la variable de 'EVENT_PUBLISH_CONNECT_STRING' se asigna el valor de arn del SNS. <br>
 En la variable de 'SOURCE_NAME' se asigna el nombre del microservicio quien envia el mensaje. Ejemplo SOURCE_NAME='hook-service'. <br>
 
 
@@ -45,10 +45,10 @@ Ejemplo de uso del método de publishMessage.
 Variables del consumer.
 ```
 #Consumer
-EVENT_CONNECT_STRING=""
+EVENT_SUBSCRIBE_CONNECT_STRING=""
 EVENT_FILTER_SOURCE = ""
 ```
-En la variable de 'EVENT_CONNECT_STRING' se asigna el url del SQS. <br>
+En la variable de 'EVENT_SUBSCRIBE_CONNECT_STRING' se asigna el url del SQS. <br>
 En la variable de 'EVENT_FILTER_SOURCE' se asigna el nombre del filtro del mensaje. Ejemplo EVENT_FILTER_SOURCE="hook-service" en caso que exista mas de un filtro puede ir separado entre comas.
 
 
